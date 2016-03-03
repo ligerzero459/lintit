@@ -1,0 +1,23 @@
+lintit - Simple linter using @evanlucas's eslint config
+
+  usage: lintit [options] [file]
+
+  options:
+    -h, --help                        show help and usage
+    -v, --version                     show version
+    -f, --formatter <formatter>       use output _formatter_
+    -g, --global <global>             add global variable
+    -p, --plugin <plugin>             use _plugin_
+    -e, --env <env>                   add specified environment variable
+
+  formatters:
+    checkstyle
+    compact
+    html
+    json
+    junit
+    stylish
+    table
+    tap
+    unix
+    visualstudio
