@@ -15,12 +15,15 @@
     "handle-callback-err": [2, "^(err|er)$"],
     "keyword-spacing": 2,
     "max-len": [2, 80, 4],
+    "no-multi-spaces": [2],
     "no-unused-vars": [2, { "vars": "all", "args": "none" }],
-    "quotes": [2, "single"],
+    "quotes": [1, "single", "avoid-escape"],
     "semi": [2, "never"],
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, "never"],
     "space-in-parens": [2, "never"],
+    "space-infix-ops": [2],
+    "space-unary-ops": [2],
     "strict": [2, "global"]
   }
 }
