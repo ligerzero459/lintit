@@ -8,6 +8,7 @@
     "arrow-parens": [2, "always"],
     "arrow-spacing": [2],
     "comma-style": [2, "first"],
+    "comma-spacing": [2, { "before": false, "after": true }],
     "comma-dangle": [2, "never"],
     "dot-notation": [2],
     "eol-last": [2],
