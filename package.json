@@ -7,7 +7,7 @@
     "test": "tap test/*.js --cov"
   },
   "dependencies": {
-    "eslint": "~2.2.0",
+    "eslint": "^3.2.2",
     "help": "~2.1.2",
     "nopt": "~3.0.6",
     "standard-engine": "~3.3.1"
