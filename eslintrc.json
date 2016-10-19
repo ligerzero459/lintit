@@ -18,11 +18,17 @@
       "MemberExpression": 1,
       "SwitchCase": 1
     }],
+    "key-spacing": [2, {
+      "beforeColon": false,
+      "afterColon": true
+    }],
     "keyword-spacing": 2,
     "max-len": [2, 80, 4],
     "no-multi-spaces": [2],
     "no-undef": [2],
     "no-unused-vars": [2, { "vars": "all", "args": "none" }],
+    "no-tabs": [2],
+    "no-trailing-spaces": [2],
     "quotes": [1, "single", "avoid-escape"],
     "semi": [2, "never"],
     "space-before-blocks": [2, "always"],
