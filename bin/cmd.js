@@ -10,6 +10,7 @@ const knownOpts = { help: Boolean
                   , global: [String]
                   , plugin: [String]
                   , env: [String]
+                  , fix: Boolean
                   , 'formatter': [
                       'checkstyle'
                     , 'compact'
@@ -30,6 +31,7 @@ const shortHand = { h: ['--help']
                   , g: ['--global']
                   , p: ['--plugin']
                   , e: ['--env']
+                  , F: ['--fix']
                   }
 const parsed = nopt(knownOpts, shortHand)
 
@@ -46,6 +48,7 @@ const lintOpts = {
   globals: parsed.global
 , plugins: parsed.plugin
 , envs: parsed.env
+, fix: parsed.fix
 }
 
 const lintit = require('../')

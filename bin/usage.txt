@@ -9,6 +9,7 @@ lintit - Simple linter using @evanlucas's eslint config
     -g, --global <global>             add global variable
     -p, --plugin <plugin>             use _plugin_
     -e, --env <env>                   add specified environment variable
+    -F, --fix                         auto fix certain issues
 
   formatters:
     checkstyle
