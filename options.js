@@ -3,7 +3,6 @@
 const eslint = require('eslint')
 const path = require('path')
 const pkg = require('./package')
-const rules = require('eslint/lib/rules')
 
 module.exports = {
   version: pkg.version
@@ -14,8 +13,7 @@ module.exports = {
 , tagline: 'I <3 biscuits'
 , eslintConfig: {
     configFile: path.join(__dirname, 'eslintrc.json')
+  , rulePaths: [path.join(__dirname, 'rules')]
   }
 , cwd: ''
 }
-
-rules.define('indentation', require('./rules/indentation'))
