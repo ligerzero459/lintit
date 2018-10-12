@@ -7,10 +7,10 @@
     "test": "tap test/*.js --cov"
   },
   "dependencies": {
-    "eslint": "^4.6.1",
+    "eslint": "^5.6.1",
     "help": "~2.1.2",
     "nopt": "~3.0.6",
-    "standard-engine": "^7.1.0"
+    "standard-engine": "^10.0.0"
   },
   "devDependencies": {
     "tap": "~5.6.0"
@@ -18,6 +18,11 @@
   "license": "MIT",
   "bin": {
     "lintit": "./bin/cmd.js"
+  },
+  "lintit": {
+    "ignore": [
+      "rules/"
+    ]
   },
   "author": "Evan Lucas <evanlucas@me.com>",
   "repository": {

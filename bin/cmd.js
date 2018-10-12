@@ -6,33 +6,33 @@ const help = require('help')()
 const nopt = require('nopt')
 const opts = require('../options')
 const knownOpts = { help: Boolean
-                  , version: Boolean
-                  , global: [String]
-                  , plugin: [String]
-                  , env: [String]
-                  , fix: Boolean
-                  , 'formatter': [
-                      'checkstyle'
-                    , 'compact'
-                    , 'html'
-                    , 'json'
-                    , 'junit'
-                    , 'stylish'
-                    , 'table'
-                    , 'tap'
-                    , 'unix'
-                    , 'visualstudio'
-                    ]
-                  }
+, version: Boolean
+, global: [String]
+, plugin: [String]
+, env: [String]
+, fix: Boolean
+, 'formatter': [
+    'checkstyle'
+  , 'compact'
+  , 'html'
+  , 'json'
+  , 'junit'
+  , 'stylish'
+  , 'table'
+  , 'tap'
+  , 'unix'
+  , 'visualstudio'
+  ]
+}
 const shortHand = { h: ['--help']
-                  , H: ['--help']
-                  , v: ['--version']
-                  , f: ['--formatter']
-                  , g: ['--global']
-                  , p: ['--plugin']
-                  , e: ['--env']
-                  , F: ['--fix']
-                  }
+, H: ['--help']
+, v: ['--version']
+, f: ['--formatter']
+, g: ['--global']
+, p: ['--plugin']
+, e: ['--env']
+, F: ['--fix']
+}
 const parsed = nopt(knownOpts, shortHand)
 
 if (parsed.help) {
